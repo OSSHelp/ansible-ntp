@@ -1,0 +1,5 @@
+---
+ntp_service_name: ntp
+ntp_packages:
+  - ntp
+  - ntpdate
