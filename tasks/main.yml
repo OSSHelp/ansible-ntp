@@ -14,4 +14,7 @@
   notify: restart ntp
 
 - name: enable and start service
-  service: name={{ ntp_service_name }} state=started enabled=yes
+  service:
+    name: "{{ ntp_service_name }}"
+    state: started
+    enabled: yes
