@@ -12,6 +12,7 @@
     path: /etc/ntp.conf
     line: 'disable monitor'
   notify: restart ntp
+  when: not ansible_check_mode
 
 - name: enable and start service
   service:
